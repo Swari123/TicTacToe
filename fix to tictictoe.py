@@ -21,6 +21,10 @@ frame7.grid(row = 2, column = 0)
 frame8.grid(row = 2, column = 1)
 frame9.grid(row = 2, column = 2)
 box_1_label = Label(frame1, text = turn)
+statusBarframe = Frame(root)
+statusBarframe.grid(row = 3)
+
+
 def box_1(event):
     #print("X")
     global turn
@@ -32,6 +36,8 @@ def box_1(event):
     elif turn == "O":
         turn = "X"
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
    
 def box_2(event):
     #print("X")
@@ -45,6 +51,8 @@ def box_2(event):
         turn = "X"
     
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_3(event):
     #print("X")
     global turn
@@ -57,6 +65,8 @@ def box_3(event):
         turn = "X"
     
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_4(event):
     #print("X")
     global turn
@@ -69,6 +79,8 @@ def box_4(event):
         turn = "X"
     
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_5(event):
     #print("X")
     global turn
@@ -81,6 +93,8 @@ def box_5(event):
         turn = "X"
     
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_6(event):
     #print("X")
     global turn
@@ -93,6 +107,8 @@ def box_6(event):
         turn = "X"
     
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_7(event):
     #print("X")
     global turn
@@ -104,6 +120,8 @@ def box_7(event):
     elif turn == "O":
         turn = "X"
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_8(event):
     #print("X")
     global turn
@@ -115,6 +133,8 @@ def box_8(event):
     elif turn == "O":
         turn = "X"
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 def box_9(event):
     #print("X")
     global turn
@@ -126,6 +146,8 @@ def box_9(event):
     elif turn == "O":
         turn = "X"
     print(turn)
+    status = Label(statusBarframe, text = turn+"'s turn", bd = 1, relief = SUNKEN)
+    status.pack(side = LEFT, fill = X)
 frame1.bind("<Button-1>", box_1)
 #i+=1
 frame2.bind("<Button-1>", box_2)
@@ -144,6 +166,7 @@ frame8.bind("<Button-1>", box_8)
 #i+=1
 frame9.bind("<Button-1>", box_9)
 #i+=1
+
     
 root.mainloop()
         
